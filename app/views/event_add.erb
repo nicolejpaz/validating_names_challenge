@@ -1,15 +1,15 @@
 <form method="post" action="/events/create">
   <label>Organizer Name:</label>
-  <input type="text" name="organizer_name">
+  <input type="text" name="organizer_name" value="<%= session[:name].organizer_name %>">
   <br>
   <label>Organizer Email:</label>
-  <input type="text" name="organizer_email">
+  <input type="text" name="organizer_email"  value="<%= session[:name].organizer_name %>">
   <br>
   <label>Title:</label>
-  <input type="title" name="title">
+  <input type="title" name="title"  value="<%= session[:name].organizer_name %>">
   <br>
   <label>Event Date:</label>
-  <input type="date" name="date">
+  <input type="date" name="date"  value="<%= session[:name].organizer_name %>">
   <br>
   <input type="submit" value="New Event">
 </form>

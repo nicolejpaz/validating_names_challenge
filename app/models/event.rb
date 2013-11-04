@@ -8,8 +8,8 @@ class Event < ActiveRecord::Base
   validate :email_is_valid
 
   def date_is_invalid
-    if date.match(/\d{4}\/\d{2}\/\d{2}/).nil?
-      errors.add(:date, "is invalid")
+    if date.nil?
+      errors.add(:date, "was not selected")
     end
   end
 
